@@ -1,0 +1,59 @@
+@media screen and (min-width: 320px){
+    *{
+        box-sizing: border-box;
+    }
+    html{
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+    }
+    ul{
+        list-style-type: none;
+    }
+    a{
+        text-decoration: none;
+        color: orange;  
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    table{
+        border-collapse: collapse;
+    }
+    th, td{
+        border: 1px solid black;
+    }
+    form{
+        max-width: 300px;
+    }
+    input, select, textarea{
+        outline: none;
+        margin: 10px 0;
+        margin-right: 5px;
+        padding: 10px;
+        border: 1px solid#e5e5e5;
+    }
+    input[type=submit],[type=radio], [type=date]{
+        cursor: pointer;
+    }
+    input[type=submit]{
+        background-color: #fff;
+    }
+    textarea{
+        resize: none;
+    }
+    .container-lg{
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    .header::after{
+        content: "";
+        clear: both;
+        display: block;
+    }
+    tr:nth-child(even){
+        background-color: #e5e5e5;
+    }
+    .footer{
+        height: 100px;
+     }
+}

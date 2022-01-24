@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" !important>
+
+    <title>Учебный сайт</title>
+</head>
+
+<body class="m-0">
+    <header class="header container-fluid">
+        <div class="header__inner container-lg">
+            <div class="row">
+                <div class="header__logo col-3 float-left">
+                    <img src="28dc9498513525.5ede2fec2a76f.jpg" style="border-radius: 50%; width: 100px; height: 100px;" alt="Картинка не доступна">
+                </div>
+                <div class="header__title col-9 d-flex">
+                    <span class="ml-2">Название сайта</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="nav container-lg">
+        <ul class="nav__link col d-md-flex">
+            <li class="col-md-4 pr-3"><a href="#link">Список гиперссылок</a></li>
+            <li class="col-md-4 pr-3"><a href="#form">Форма</a></li>
+            <li class="col-md-4"><a href="#table">Таблица</a></li>
+        </ul>
+    </nav>
+    <div class="container-lg">
+        <div class="row">
+            <div class="col">
+                <div class=" d-flex flex-column">
+                    <section class="link" id="link">
+                        <ol>
+                            <li><a href="http://example.com/">Example(http)</a></li>
+                            <li><a href="https://example.com/">Example(https)</a></li>
+                            <li><a href="ftp://exaple.com/myfile.zip">FTP без авторизации</a></li>
+                            <li><a href="ftp://users:password@exaple.com/myfile.zip">FTP с авторизацией</a></li>
+                            <li><a href="http://example.com/#anchor">Ссылка на фрагмент страницы некоторого сайта</a></li>
+                            <li><a href="#top">Ссылка на фрагмент текущей страницы</a></li>
+                            <li><a href="http://example.com?parameter1=p1&parameter2=p2">Ссылка с двумя параметрами в URL</a></li>
+                            <li>
+                            Список ссылок основной навигации сайта с подписями title
+                            <ul>
+                                <li><a href="#main" title="Нумерованный список гиперссылок">Нумерованный список гиперссылок</a></li>
+                                <li><a href="#head2" title="Форма">Форма</a></li>
+                            </ul>
+                            </li>
+                            <li><a>Ссылка без href</a></li>
+                            <li><a href="">Пустой href</a></li>
+                            <li><a href="http://example.com/" rel="nofollow">ссылка по которой запрещен переход поисковикам</a></li>
+                            <li><noindex><a href="http://example.com/" rel="nofollow">Запрещенная для индексации поисковиков</a></noindex></li>
+                            <li><p>Контекстная <a href="http://example.com/">ссылка</a> в тексте абзаца</p></li>
+                            <li>Ссылка-изображение<br/>
+                                <a href="http://example.com/"><img src="https://pbs.twimg.com/media/ETpcZHkWAAE6A-s.jpg" height="242" alt="Описание картинки"></a></li>
+                            <li>Ссылки из прямоугольных и круглых областей картинки<br/>
+                                <img src="https://i.pinimg.com/originals/b5/ba/27/b5ba27d635df94876734d3b87ab103f8.jpg" style="width: 95%; height: 100%; max-width: 500px; max-height: 242px;" alt="Круг и Квадрат" usemap="#mymap">
+                                <map name="mymap">
+                                <area shape="rect" coords="872,458,518,105" href="http://example.com/" alt="Прямоугольная область">
+                                <area shape="circle" coords="252,277,177" href="http://example.com/" alt="Круглая область">
+                                </map>
+                            </li>
+                            <li><a href="page">Относительная ссылка на страницу в текущем каталоге</a></li>
+                            <li><a href="./about/page">Относительная ссылка на страницу в каталоге about</a></li>
+                            <li><a href="../page">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+                            <li><a href="../../page">Относительная ссылка на страницу в каталоге двумя уровнями выше текущего</a></li>
+                            <li><a href="/">Сокращенная ссылка на главную</a></li>
+                            <li><a href="/pages/page">Сокращенная ссылка на внутреннюю</a></li>
+                            </ol>
+                    </section>
+                    <div class="table order-1 order-md-0">
+                        <table id="table">
+                            <tbody>
+                                <tr class="tdColor">
+                                <th>Колонка 1</th>
+                                <th>Колонка 2</th>
+                                <th>Колонка 3</th>
+                                </tr>
+                            
+                                <tr class="tdColor">
+                                <td colspan="2">Ячейка 1</td>
+                                <td>Ячейка 1</td>
+                                </tr>
+                            
+                                <tr class="tdColor">
+                                <td colspan="2">Ячейка 2 </td>
+                                <td>Ячейка 2 </td>
+                                </tr>
+                            
+                                <tr class="tdColor">
+                                <td>Ячейка 3</td>
+                                <td>Ячейка 3</td>
+                                <td>Ячейка 3</td>
+                                </tr>
+                            
+                                <tr class="tdColor">
+                                <td colspan="3">Ячейка 4</td>
+                                </tr>
+                            
+                                <tr class="tdColor">
+                                <td>Ячейка 5</td>
+                                <td>Ячейка 5</td>
+                                <td>Ячейка 5</td>
+                                </tr>
+                            
+                            </tbody>
+                        </table>
+                    </div>
+                    <form action="https://www.example.com" method="POST" class="form__btn d-flex flex-column" id="form">
+                        Имя:
+	<br/>
+	<label>
+	<input name="name">
+	</label>
+	<br/>
+					
+	e-mail:
+	<br/>				
+	<label>
+	<input name="email" type="email"/>
+	</label>
+	<br/>
+					
+	Дата рождения:
+	<br/>				
+	<label>
+	<input name="date" type="date"/>
+	</label>
+	<br/>
+				
+	Пол:
+	<br/>
+	<label>
+	<input type="radio" name="radio2" value="1"/>
+	м
+	</label>
+				
+	<label>
+	<input type="radio" name="radio2" value="2"/>
+	ж
+	</label>
+	<br/>
+				
+	Количество конечностей:
+	<br/>
+	<label>
+	<input type="radio" name="radio1" value="1"/>
+	1
+	</label>
+					
+	<label>
+	<input type="radio" name="radio1" value="2"/>
+	2
+	</label>
+	
+	<label>
+	<input type="radio" name="radio1" value="3"/>
+	3
+	</label>
+				
+	<label>
+	<input type="radio" name="radio1" value="4"/>
+	4
+	</label><br/>
+				
+	<label>
+	Сверхспособности:
+	<br/>
+	<select name="p" multiple="multiple">
+	<option value="immortality" selected="selected">бессмертие</option>
+	<option value="passingthroughwalls">прохождение сквозь стены</option>
+	<option value="levitation">левитация</option>
+	</select>
+	</label>
+	<br/>
+				
+	<label>
+	Биография:<br/>
+	<textarea name="biofraphy">...</textarea>
+	</label><br/>
+					
+	<p> С контрактом ознакомлен(а):</p>
+	<label>
+	<input type="checkbox" checked="checked" name="check"/>
+	</label>
+	<br/>
+				
+	<input type="submit" value="Отправить"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer container-fluid" id="footer">
+        <div class="row">
+            <div class="col">
+                <div class="footer__inner col ml-5">
+                    <span class="">(c) Захаров Кирилл 2021</span>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
